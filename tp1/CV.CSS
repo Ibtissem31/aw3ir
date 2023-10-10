@@ -1,0 +1,47 @@
+
+    body {
+      background-color: #ecf1f7;
+      font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+      font-size: 16px;
+      margin: 0 auto;
+      max-width: 800px;
+
+    }
+
+
+
+h1 {
+    text-align: center;
+    /* centrer le titre*/
+}
+
+table{
+
+border:5px solid;
+border-color: rgb(197, 42, 164);
+border-width: thin;
+margin-left:30px ;
+margin-bottom: 20px;
+border-collapse: collapse;
+
+}
+ tr{
+    text-align: center;
+    vertical-align: middle;
+   
+ }        
+ td{
+text-align: left;
+ padding: 8px;
+ /*vertical-align: middle;*/}
+ td, tr, li {
+    color: rgb(54, 52, 54) ;
+ }
+
+ h1,h2,h3{
+
+    color: rgb(197, 42, 164);
+ }
+/*{
+    border-width: thin;
+}*/
