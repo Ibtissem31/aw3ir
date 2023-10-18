@@ -1,0 +1,99 @@
+body {
+  background-color: #e9ebee;
+  font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco",
+    "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+
+h1 {
+
+  text-align: end;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 16px;
+  box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+}
+
+label {
+  max-width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 150px;
+  display: inline-block;
+}
+
+input {
+  width: 250px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  outline: 0;
+  /* pour s'assurer que les margin/padding n'impacte pas la largeur width */
+}
+
+input [ type="submit"] {
+  margin: 0 auto;
+  background-color: rgb(114, 32, 190);
+  border: 1px solid rgb(109, 26, 187);
+  cursor: pointer;
+  text-align: center;
+  display: block;
+}
+
+/*si un champ est invalide le background color will be gray*/
+form:invalid input[type="submit"] {
+  background-color: rgb(150, 139, 145);
+}
+
+form :valid input[type="submit"] {
+
+  background-color: rgb(223, 15, 129);
+}
+
+/*si le champ est vlide, l'imoji reste*/
+input:valid+.icon-ok {
+  display: inline-block;
+}
+
+/*si le champ est invalide, l'imoji dissparait*/
+input:invalid+.icon-ok {
+  display: none;
+}
+
+.btn-primary {
+  border-radius: 5px;
+  padding: 6px 12px;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
